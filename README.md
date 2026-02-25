@@ -7,7 +7,7 @@
 
 Desarrollo FullStack de mi portfolio, con diseño interactivo y responsivo. Implementado con el fin de mostrar mis proyectos, habilidades y ofrecer una vía de contacto directa, todo con un enfoque fuerte en buenas prácticas de desarrollo, código limpio y una experiencia de usuario fluida.
 
-🔗 **[Ver Demo en Vivo]((https://ignacio-ciccone-portfolio.vercel.app/))**
+🔗 **[Ver Demo en Vivo](https://ignacio-ciccone-portfolio.vercel.app/)**
 
 ## ✨ Características Principales
 
