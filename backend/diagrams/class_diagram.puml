@@ -1,0 +1,90 @@
+@startuml backend
+
+'app
+class App  << (A, #3382FF) >>{
+    + flask_app: Flask
+    + db: SQLAlchemy
+    --
+    + init_db()
+    + register_blueprints()
+}
+
+'routes
+class messages_routes << (M, #FF7700) Blueprint >> {
+    + message_bp: Blueprint
+    --
+    + message_view: MethodView
+}
+
+class visits_routes << (M, #FF7700) Blueprint >> {
+    + visits_bp: Blueprint
+    --
+    + visits_view: MethodView
+}
+
+'Classes
+interface IEmailService {
+    + send(to_email: str, subject: str, content: str): None
+}
+
+class MessageController {
+    - email_service: IEmailService
+    - message_persistence: IPersistence
+    + post(): Response
+}
+
+class ResendService {
+    - sender: str
+    + send(to_email: str, subject: str, content: str): None
+}
+
+interface IPersistence {
+    + save_message(name, email, content): None
+    + save_visit(ip_hashed: str): None
+    + get_visit(ip_hashed: str): Visit
+    + rollback(): None
+}
+
+class Persistence {
+    - db: SQLAlchemy
+    + save_message(name, email, content): None
+    + save_visit(ip_hashed: str): None
+    + get_visit(ip_hashed: str): Visit
+    + rollback(): None
+}
+
+class VisitsController {
+    - visit_persistence: IPersistence
+    - get_ip_hash(ip_address): str
+    - get_client_ip(): str
+    + post(): Response
+    + get(): Response
+}
+
+interface IDataValidator {
+    + validate_message(name: str, email: str, content: str): tuple[bool, str]:
+}
+
+class DataValidator {
+    + validate_message(name: str, email: str, content: str): tuple[bool, str]:
+}
+
+'Relationships
+App ..> messages_routes : uses
+App ..> visits_routes : uses
+
+messages_routes ..> MessageController : uses
+visits_routes ..> VisitsController : uses
+
+ResendService ..|> IEmailService : implements
+IEmailService ..* MessageController : composes
+
+IPersistence .u.* MessageController : composes
+IPersistence .u.* VisitsController : composes
+
+Persistence .u.|> IPersistence : implements
+
+IDataValidator .u.* MessageController : composes
+DataValidator .u.|> IDataValidator : implements
+
+@enduml

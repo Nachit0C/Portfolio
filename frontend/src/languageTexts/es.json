@@ -1,0 +1,70 @@
+{
+    "navBar":{
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "heroSection":{
+        "title": "Ignacio Ciccone",
+        "subtitle": "Desarrollador Backend",
+        "content": "Desarrollador FullStack con enfoque en Backend. Trabajo principalmente con JavaScript(TS), Node.js, bases de datos SQL/NoSQL, y desarrollo Frontend con React.",
+        "likeButton": "¡Si es tu primera vez mirando mi portafolio dale like!"
+    },
+    "AboutSection":{
+        "title": "Sobre Mi",
+        "careerTitle": "Carrera Profesional",
+        "careerContent": "A lo largo de mi experiencia laboral, logré aplicar los conocimientos técnicos obtenidos en mis estudios para resolver problemas reales. También aprendí la importancia del trabajo en equipo en entornos profesionales para cumplir con los objetivos empresariales de manera eficaz.",
+        "studiesTitle": "Estudios",
+        "studiesContent": "Comencé mis estudios con ingeniería electrónica en la UTN, donde desarrollé una mentalidad orientada a la resolución de problemas utilizando la lógica. Luego, descubrí mi pasión por la programación, aprendiendo distintos lenguajes, tecnologías y los distintos paradigmas. Mi búsqueda continua por aprender me encuentra cursando una tecnicatura superior en sistemas informáticos.",
+        "visionTitle": "Visión",
+        "visionContent": "Creo que un buen desarrollo va más allá de simplemente hacer que algo funcione. Busco que mi trabajo sea prolijo, estructurado, robusto y escalable utilizando POO y aplicando principios SOLID. Mi enfoque se basa en asegurar calidad en cada línea de código, garantizando eficiencia, seguridad y mantenibilidad a lo largo del tiempo.",
+        "objectivesTitle": "Objetivos",
+        "objectivesContent": "Actualmente, me encuentro en busqueda una trabajo estable en una empresa donde pueda aportar desde mis conocimientos para resolver nuevos desafíos, consolidarme como desarrollador y formar parte de un equipo colaborativo y comprometido. Me interesa trabajar en un entorno que fomente el aprendizaje continuo y el crecimiento profesional.",
+        "stack": "Mi Stack"
+    },
+    "ProjectsSection":{
+        "title": "Proyectos",
+        "GitHub": "GitHub",
+        "LiveDemo": "Ir a Página"
+    },
+    "Projects":{
+        "URioPlataTitle": "Universidad Rio De la plata",
+        "URioPlataDescription": "Simula ser la página de una universidad diseñada para centralizar la información institucional y administrativa. El sistema permite la consulta de carreras y sedes, e integra un panel administrativo restringido para la gestión de personas y de inscripción de alumnos a carreras bajo un entorno seguro.",
+        "URioPlataBullet1": "Frontend: Interfaz responsiva con HTML5, CSS3 y manipulación del DOM mediante JavaScript.",
+        "URioPlataBullet2": "Backend: API REST desarrollada en Node.js con Express.js que realiza operaciones CRUD.",
+        "URioPlataBullet3": "Gestión de Datos: Diseño y modelado de base de datos relacional en MySQL.",
+        "URioPlataBullet4": "Seguridad: Autenticación y autorización implementada con JWT y bcrypt.",
+        "chatBotTitle": "Chat Bot con IA",
+        "chatBotDescription": "Asistente virtual diseñado para optimizar el flujo de pedidos de un restaurante de sushi. El chatbot guía al usuario de manera intuitiva desde la exploración del menú hasta la confirmación del pedido, guardando el registro de órdenes en una base de datos y resolviendo consultas en tiempo real.",
+        "chatBotBullet1": "Frontend: Gestión de estado global con Zustand y persistencia local.",
+        "chatBotBullet2": "Backend: API REST desarrollada en Flask con integración de base de datos NoSQL (MongoDB).",
+        "chatBotBullet3": "IA: Procesamiento LLM proveniente de la API de Cohere.",
+        "chatBotBullet4": "UX/UI: Sistema de \"Cold Start Handling\" con feedback visual para servidores en reposo.",
+        "peopleFlowTitle": "People Flow (Backend)",
+        "peopleFlowDescription": "API de gestión de capital humano diseñada para centralizar procesos administrativo y eliminar la carga operativa manual y el riesgo de pérdida de información. La aplicación ofrece un control robusto en la documentación de los empleados y proporciona información analítica sobre el salario de los empleados (escalable a otros indicadores).",
+        "peopleFlowBullet1": "Docker: Orquestado con Docker para garantizar el correcto funcionamiento encualquier entorno.",
+        "peopleFlowBullet2": "API: API REST robusta utilizando Python y Flask, gestiona las operaciones CRUD.",
+        "peopleFlowBullet3": "Base de Datos: MongoDB para el almacenamiento de datos de empleados.",
+        "portfolioTitle": "Portafolio Personal",
+        "portfolioDescription": "Mi portafolio personal es una plataforma que muestra mi trayectoria profesional, proyectos y habilidades como desarrollador. El sitio está diseñado para ser una representación visual de mi experiencia y conocimientos técnicos, con el objetivo de atraer oportunidades laborales y conectar con otros profesionales del sector.",
+        "portfolioBullet1": "Frontend: Desarrollado con React y MUI y Zustand como middleware de persistencia. Orientado a una UX dinámica e intuitiva.",
+        "portfolioBullet2": "Backend: API REST construida con Flask hecha con POO siguiendo los principios SOLID para gestionar el contenido del portafolio, resguardando información sensible.",
+        "portfolioBullet3": "Diseño: Interfaz moderna y responsiva, optimizada para dispositivos móviles y de escritorio.",
+        "mealPrepTitle": "Meal Prep App",
+        "mealPrepDescription": "Plataforma de planificación alimenticia diseñada para gestionar calendarios de alimentación personalizados. Permite a los usuarios gestionar recetas y organizarlas de manera semanal o mensual, optimizando la preparación de alimentos.",
+        "comingSoon": "¡Próximamente!"
+    },
+    "ContactSection":{
+        "title": "Contacto",
+        "subtitle": "¿Quieres ponerte en contacto conmigo? ¡No dudes en enviarme un mensaje!",
+        "nameLabel": "Nombre",
+        "emailLabel": "Correo Electrónico",
+        "TextAreaLabel": "Mensaje",
+        "TextAreaPlaceholder": "Escribe tu mensaje aquí...",
+        "clearButton": "Borrar",
+        "sendButton": "Enviar",
+        "successMsg": "Email enviado exitosamente!",
+        "errorMsg": "Error al enviar el mensaje."
+    }
+}

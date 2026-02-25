@@ -1,0 +1,249 @@
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scroll-padding-top: 10px;
+  }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    line-height: 1.4;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 10px;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+  }
+  h1 {
+    font-size: 2.2em;
+    margin-top: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  b,
+  strong,
+  th {
+    font-weight: 600;
+  }
+  
+  q::before {
+    content: none;
+  }
+  
+  q::after {
+    content: none;
+  }
+  address {
+    font-style: normal;
+  }
+  
+  a[href^='mailto\:']::before {
+    content: '📧 ';
+  }
+  
+  a[href^='tel\:']::before {
+    content: '📞 ';
+  }
+  
+  a[href^='sms\:']::before {
+    content: '💬 ';
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  code {
+    background: #efefef;
+    background: var(--background);
+    color: #000;
+    color: var(--code);
+    padding: 2.5px 5px;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  samp {
+    background: #efefef;
+    background: var(--background);
+    color: #000;
+    color: var(--code);
+    padding: 2.5px 5px;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  time {
+    background: #efefef;
+    background: var(--background);
+    color: #000;
+    color: var(--code);
+    padding: 2.5px 5px;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  pre > code {
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+  }
+  
+  var {
+    color: #39a33c;
+    color: var(--variable);
+    font-style: normal;
+    font-family: monospace;
+  }
+  
+  kbd {
+    padding: 2px 4px 2px 4px;
+  }
+  
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+  details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px 0;
+    margin: 1em 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  details[open] {
+    padding: 10px;
+  }
+  
+  details > :last-child {
+    margin-bottom: 0;
+  }
+  
+  details[open] summary {
+    margin-bottom: 10px;
+  }
+  
+  summary {
+    display: list-item;
+    padding: 10px;
+    margin: -10px -10px 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  summary:hover,
+  summary:focus {
+    text-decoration: underline;
+  }
+  
+  details > :not(summary) {
+    margin-top: 0;
+  }
+  
+  dialog {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+  }
+  
+  dialog > header:first-child {
+    border-radius: 6px 6px 0 0;
+    margin: -10px -30px 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  dialog::-webkit-backdrop {
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+  
+  dialog::backdrop {
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+  
+  footer {
+    border-top: 1px solid #dbdbdb;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+  
+  body > footer {
+    margin-top: 40px;
+  }  
+  button,
+  input,
+  textarea {
+    border: 1px solid #000;
+  }  
+  a {
+    text-decoration: underline;
+  }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 64px;
+}
+
+.mainContent{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5rem;
+}
+
+.mainContentSection {
+  min-height: 100vh; 
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 60px; 
+  padding-bottom: 60px;
+}

@@ -1,0 +1,71 @@
+{
+    "navBar":{
+        "home": "home",
+        "about": "About Me",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "heroSection":{
+        "title": "Ignacio Ciccone",
+        "subtitle": "Backend Developer",
+        "content": "Fullstack developer with a focus on Backend. I work mainly with JavaScript(TS), Node.js, SQL/NoSQL databases, and Frontend development with React.",
+        "likeButton": "If this is your first time looking at my portfolio give me a like!"
+    },
+    "AboutSection": {
+        "title": "About Me",
+        "careerTitle": "Professional Experience",
+        "careerContent": "Throughout my work experience, I have successfully applied the technical knowledge gained from my studies to solve real-world problems. I have also learned the importance of teamwork in professional environments to effectively achieve business objectives.",
+        "studiesTitle": "Education",
+        "studiesContent": "I began my studies in Electronic Engineering at UTN, where I developed a logic-driven, problem-solving mindset. Later, I discovered my passion for programming, learning various languages, technologies, and paradigms. My continuous drive to learn has led me to currently pursue an Associate Degree in Computer Systems.",
+        "visionTitle": "Vision",
+        "visionContent": "I believe that good development goes beyond simply making something work. I strive for my code to be clean, structured, robust, and scalable by utilizing OOP and applying SOLID principles. My approach is based on ensuring quality in every line of code, guaranteeing efficiency, security, and maintainability over time.",
+        "objectivesTitle": "Objectives",
+        "objectivesContent": "I am currently seeking a stable role in a company where I can apply my knowledge to solve new challenges, establish myself as a developer, and be part of a collaborative and committed team. I am eager to work in an environment that fosters continuous learning and professional growth.",
+        "stack": "Tech Stack"
+    },
+    "ProjectsSection":{
+        "title": "Projects",
+        "GitHub": "GitHub",
+        "LiveDemo": "Live Demo"
+    },
+    "Projects": {
+        "URioPlataTitle": "Rio de la Plata University",
+        "URioPlataDescription": "A simulated university website designed to centralize institutional and administrative information. The system allows users to browse courses and campuses, and features a restricted administrative panel for personnel management and secure student enrollment.",
+        "URioPlataBullet1": "Frontend: Responsive interface built with HTML5, CSS3, and DOM manipulation using JavaScript.",
+        "URioPlataBullet2": "Backend: REST API developed in Node.js with Express.js performing CRUD operations.",
+        "URioPlataBullet3": "Data Management: Relational database design and modeling in MySQL.",
+        "URioPlataBullet4": "Security: Authentication and authorization implemented with JWT and bcrypt.",
+        "chatBotTitle": "AI Chatbot",
+        "chatBotDescription": "A virtual assistant designed to optimize a sushi restaurant's order flow. The chatbot intuitively guides users from menu exploration to order confirmation, storing records in a database and resolving queries in real-time.",
+        "chatBotBullet1": "Frontend: Global state management using Zustand with local persistence.",
+        "chatBotBullet2": "Backend: REST API developed in Flask with NoSQL (MongoDB) database integration.",
+        "chatBotBullet3": "AI: LLM processing powered by the Cohere API.",
+        "chatBotBullet4": "UX/UI: Cold Start Handling system with visual feedback for idle servers.",
+        "peopleFlowTitle": "People Flow (Backend)",
+        "peopleFlowDescription": "A human capital management API designed to centralize administrative processes, eliminating manual operational workload and data loss risks. The application offers robust control over employee documentation and provides analytical insights into salaries (scalable to other indicators).",
+        "peopleFlowBullet1": "Docker: Orchestrated with Docker to guarantee consistent performance across any environment.",
+        "peopleFlowBullet2": "API: Robust REST API built with Python and Flask to manage CRUD operations.",
+        "peopleFlowBullet3": "Database: MongoDB for efficient employee data storage.",
+        "portfolioTitle": "Personal Portfolio",
+        "portfolioDescription": "My personal portfolio is a platform showcasing my professional trajectory, projects, and developer skills. The site serves as a visual representation of my technical expertise, aimed at attracting job opportunities and connecting with industry professionals.",
+        "portfolioBullet1": "Frontend: Developed with React, MUI and Zustand as a persistence middleware. Focused on a dynamic and intuitive UX.",
+        "portfolioBullet2": "Backend: REST API built with Flask and Python following SOLID principles to manage portfolio content.",
+        "portfolioBullet3": "Design: Modern and responsive interface, optimized for both mobile and desktop devices.",
+        "portfolioBullet4": "Deployment: Implemented on Vercel to ensure optimal performance and high availability.",
+        "mealPrepTitle": "Meal Prep App",
+        "mealPrepDescription": "A nutritional planning platform designed to manage personalized meal calendars. It allows users to manage recipes and organize them on a weekly or monthly basis, optimizing meal preparation.",
+        "comingSoon": "Coming Soon!"
+    },
+    "ContactSection":{
+        "title": "Contact",
+        "subtitle": "Would you like to get in touch with me? Don't hesitate to send me a message!",
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "TextAreaLabel": "Message",
+        "TextAreaPlaceholder": "Write your message here...",
+        "clearButton": "Clear",
+        "sendButton": "Send",
+        "successMsg": "Email sent successfully!",
+        "errorMsg": "Error sending message."
+    }
+}
