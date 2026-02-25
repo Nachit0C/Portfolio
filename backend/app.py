@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 from routes.visits_routes import visits_bp
 from routes.messages_routes import message_bp
+from routes.healthcheck_route import healthcheck_bp
 
 load_dotenv()
 app = Flask(__name__)
@@ -18,10 +19,11 @@ except Exception as e:
 
 app.register_blueprint(message_bp)
 app.register_blueprint(visits_bp)
+app.register_blueprint(healthcheck_bp)
 
 @app.route('/')
 def home():
-    return "Servidor Activo con PostgreSQL conectado"
+    return "Servidor Activo con PostgreSQL conectado", 200
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)

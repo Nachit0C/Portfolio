@@ -20,11 +20,8 @@ export function HeroSection () {
   
   const handleLike = async () => {
     const success = await saveVisit();
-
-    if (success) {
-      setShowPlusOne(true);
-      setTimeout(() => setShowPlusOne(false), 800);
-    }
+    setShowPlusOne(true);
+    setTimeout(() => setShowPlusOne(false), 800);
   };
 
   return (

@@ -10,10 +10,13 @@ import { useTheme } from './hooks/useTheme'
 import { CssBaseline, Box, ToggleButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { useLanguageStore } from './store/languageStore'
+import { useWakeUpBackend } from './hooks/useWakeUpBackend.js'
 
 function App() {
   const {theme, setDarkMode, darkMode} = useTheme()
   const { toggleLanguage } = useLanguageStore();
+  
+  useWakeUpBackend();
 
   return (
     <ThemeProvider theme={theme}>

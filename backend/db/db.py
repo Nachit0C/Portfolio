@@ -6,18 +6,25 @@ db = SQLAlchemy()
 
 def init_db(app):
     load_dotenv()
-    user = os.getenv('DB_USER')
-    password = os.getenv('DB_PASSWORD')
-    host = os.getenv('DB_HOST')
-    port = os.getenv('DB_PORT')
-    name = os.getenv('DB_NAME')
+    url = os.getenv('DB_URL')
 
-    uri = f"postgresql://{user}:{password}@{host}:{port}/{name}"
-    app.config['SQLALCHEMY_DATABASE_URI'] = uri
+    if not url:
+        raise ValueError("Error: La variable de entorno DB_URL no está configurada o está vacía.")
+
+    if url.startswith("postgres://"):
+        url = url.replace("postgres://", "postgresql://", 1)
+
+    
+    app.config['SQLALCHEMY_DATABASE_URI'] = url
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     db.init_app(app)
-    
-    with app.app_context():
-        from db.models import Visit, Message
-        db.create_all()
+
+    try:
+        with app.app_context():
+            from db.models import Visit, Message
+            db.create_all()
+            print("Tablas creadas/verificadas exitosamente.")
+    except Exception as e:
+        print(f"Error específico al crear tablas: {e}")
+        raise e

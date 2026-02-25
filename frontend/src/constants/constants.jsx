@@ -153,8 +153,8 @@ const projects = [{
         "Projects.portfolioBullet3"
     ],
     "image": portfolioImg,
-    "linkPage": "https://urioplata.alwaysdata.net/",
-    "linkGit": "https://github.com/Nachit0C/ProyectoFullStack-Universidad",
+    "linkPage": "https://ignacio-ciccone-portfolio.vercel.app/",
+    "linkGit": "https://github.com/Nachit0C/Portfolio",
     "comingSoon": false
     },{
     "title": "Projects.mealPrepTitle",
