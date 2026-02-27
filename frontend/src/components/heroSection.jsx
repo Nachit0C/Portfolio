@@ -19,9 +19,9 @@ export function HeroSection () {
   }, [error]);
   
   const handleLike = async () => {
-    const success = await saveVisit();
     setShowPlusOne(true);
     setTimeout(() => setShowPlusOne(false), 800);
+    await saveVisit();
   };
 
   return (

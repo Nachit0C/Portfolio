@@ -23,6 +23,7 @@ export function useVisited() {
         if (liked || isPending) return false;
         setError(null);
         setIsPending(true);
+        setLiked(true);
 
         try {
             const response = await fetch(import.meta.env.VITE_BACKEND_URL_VISIT, {
@@ -31,10 +32,12 @@ export function useVisited() {
             if (!response.ok){
                 throw new Error("Error en el servidor");
             }
-            setLiked(true);
+            
             return true;
         } catch (err) {
+            console.error("Error al registrar el like:", err);
             setError("Error al registrar el Like, intenta de nuevo mas tarde.");
+            setLiked(false);
             return false;
         } finally {
             setIsPending(false);

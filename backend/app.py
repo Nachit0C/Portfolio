@@ -7,11 +7,13 @@ from routes.visits_routes import visits_bp
 from routes.messages_routes import message_bp
 from routes.healthcheck_route import healthcheck_bp
 
+print("Iniciando la aplicación Flask...")
 load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
 try:
+    print("Intentando conectar a la base de datos...")
     init_db(app)
     print("Conexión a la base de datos exitosa")
 except Exception as e:
@@ -20,10 +22,11 @@ except Exception as e:
 app.register_blueprint(message_bp)
 app.register_blueprint(visits_bp)
 app.register_blueprint(healthcheck_bp)
+print("Rutas registradas: /messages, /visits, /healthcheck")
 
 @app.route('/')
 def home():
     return "Servidor Activo con PostgreSQL conectado", 200
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+#if __name__ == '__main__':
+#    app.run(debug=True, port=5001)
